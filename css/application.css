@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 .srt {
   border: 0;
   clip: rect(0 0 0 0);
@@ -241,6 +241,7 @@ th {
 }
 
 body {
+  color: #797e83;
   font-size: 16px;
   line-height: 1.5;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -264,6 +265,49 @@ h2 {
   font-weight: 100;
   font-size: 1.5em;
   color: #999da1;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+h4 {
+  margin-top: 1.5714285714em;
+  margin-bottom: 2.2857142857em;
+  color: #d6d7d9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 0.875em;
+}
+
+a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input,
+textarea {
+  display: block;
+  outline: 0;
+  border: 0;
+}
+
+input:focus,
+textarea:focus {
+  transition: 0.3s;
+}
+
+button {
+  outline: 0;
 }
 
 .site-logo {
@@ -303,6 +347,27 @@ h2 {
   height: 3px;
   background: #999da1;
   top: 4px;
+}
+
+.nav {
+  margin-top: 1.25em;
+  margin-bottom: 1.875em;
+}
+.nav__item {
+  display: inline-block;
+  margin: 0 0.75em;
+}
+.nav__item a {
+  font-size: 1.125em;
+  font-weight: 300;
+  color: #797e83;
+  display: block;
+  padding: 0.4444444444em;
+  border-bottom: 1px solid transparent;
+}
+.nav__item--current a {
+  color: #0b0b0b;
+  border-color: #52bab3;
 }
 
 /*# sourceMappingURL=application.css.map */
