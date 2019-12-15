@@ -7,22 +7,21 @@
     margin-bottom: em(30px);
 
     @include e(item) {
-        display: inline-block;
-        margin: 0 em(12px);
-
+        @extend %nav-item-disp;
         a {
-            font-size: em(18px);
-            font-weight: $font-weight--light;
+            @extend %nav-item-link;
             color: palette(grey);
-            display: block;
-            padding: em(8px, 18px);
-            border-bottom: 1px solid transparent;
-        }
 
+            &:hover {
+                @extend %nav-item-on;
+            }
+        }
+        
         @include m(current) {
+            @extend %nav-item-disp;
             a {
-                color: palette(black);
-                border-color: $color-primary;
+                @extend %nav-item-link;
+                @extend %nav-item-on ;
             }
         }
     }

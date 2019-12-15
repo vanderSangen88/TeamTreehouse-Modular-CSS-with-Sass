@@ -87,7 +87,7 @@ Pass the element-selector name
 }
 ```
 
-> Placeholder selectors!
+> Placeholder selectors: Group selectors that share common base styles.
 
 ## Challenge
 ### Task 1 / 2

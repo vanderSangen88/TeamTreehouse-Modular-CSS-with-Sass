@@ -310,6 +310,24 @@ button {
   outline: 0;
 }
 
+.nav__item--current, .nav__item {
+  display: inline-block;
+  margin: 0 0.75em;
+}
+
+.nav__item--current a, .nav__item a {
+  font-size: 1.125em;
+  font-weight: 300;
+  display: block;
+  padding: 0.4444444444em;
+  border-bottom: 1px solid transparent;
+}
+
+.nav__item--current a, .nav__item a:hover {
+  color: #0b0b0b;
+  border-color: #52bab3;
+}
+
 .site-logo {
   margin-bottom: 2em;
   background-image: url("../img/logo.svg");
@@ -353,21 +371,8 @@ button {
   margin-top: 1.25em;
   margin-bottom: 1.875em;
 }
-.nav__item {
-  display: inline-block;
-  margin: 0 0.75em;
-}
 .nav__item a {
-  font-size: 1.125em;
-  font-weight: 300;
   color: #797e83;
-  display: block;
-  padding: 0.4444444444em;
-  border-bottom: 1px solid transparent;
-}
-.nav__item--current a {
-  color: #0b0b0b;
-  border-color: #52bab3;
 }
 
 /*# sourceMappingURL=application.css.map */
