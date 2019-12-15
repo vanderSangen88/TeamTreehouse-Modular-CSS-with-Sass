@@ -68,6 +68,25 @@ How would you write a BEM modifier class for an active variation of .nav__item?
 
 ## S2V3 - BEM Mixins 
 
+A mixin for styling elements inside a block:
+Pass the element-selector name
+```scss
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+```
+A mixin for styling modifiers inside an element:
+Pass the element-selector name
+```scss
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+```
+
 > Placeholder selectors!
 
 ## Challenge

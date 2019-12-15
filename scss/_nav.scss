@@ -6,7 +6,7 @@
     margin-top: em(20px);
     margin-bottom: em(30px);
 
-    &__item {
+    @include e(item) {
         display: inline-block;
         margin: 0 em(12px);
 
@@ -19,9 +19,11 @@
             border-bottom: 1px solid transparent;
         }
 
-        &--current a {
-            color: palette(black);
-            border-color: $color-primary;
+        @include m(current) {
+            a {
+                color: palette(black);
+                border-color: $color-primary;
+            }
         }
     }
 }

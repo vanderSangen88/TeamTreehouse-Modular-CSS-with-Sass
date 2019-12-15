@@ -49,7 +49,20 @@ $path-img: $path-image--rel;
         }
     }
     @else {
-        // @warn "`#{$el}` is not a valid pseudo-element."
         @error "`#{$el}` is not a valid pseudo-element."
+    }
+}
+
+// BEM Mixins
+
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
     }
 }
