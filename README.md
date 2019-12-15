@@ -151,3 +151,86 @@ Write the Sass directive that instructs the `.btn--submit` modifier class to inh
 How would we write the BEM modifier class for the last item in a menu block?
 
 *.menu__item--end*
+
+---
+## S3V1 - What is SMACSS?
+
+#### Base Rules:
+define what elements look like by default
+
+#### Layour Rules:
+define layout styles for major sections of a page
+
+#### Module Rules:
+where styles are written for each module as stand-alone, reusable components
+
+#### State Rules:
+define styles for element states
+
+#### Theme Rules:
+define different colors and images to give project a different theme
+ 
+## S3V2 - SMACSS in our workflow
+
+## Quiz 
+### Question 1 / 5
+
+What are the five types of SMACSS categories?
+
+*base, layout, modules, states and themes*
+
+### Question 2 / 5
+
+The ** rules make up the majority of a project's styles.
+
+### Question 3 / 5
+
+Is SMACSS a framework?
+
+*No, SMACSS is a style guide for organizing our code*
+
+### Question 4 / 5
+
+The CSS reset styles fall under which category?
+
+*Base rules*
+
+### Question 5 / 5
+
+Which rules define what elements look like by default?
+
+*Base rules*
+
+## S3V3 - Panel Layout Component 
+## S3V4 - Styling Images
+
+## Quiz 
+### Question 1 / 5
+
+Which of the following statements about writing Sass is true?
+
+*Our ruleset should only inherit and add to previous rules*  &  *We shouldn't need to undo properties*
+
+### Question 2 / 5
+
+Is it important to closely follow all of SMACSS' guidelines?
+
+*No, use the suggestions and guidelines to help find what works for you.*
+
+### Question 3 / 5
+
+Why is it a good idea to include an index/manifest file in each directory?
+
+*It makes our Sass more manageable because we only need to import the single index reference from each directory.*
+
+### Question 4 / 5
+
+In the layout directory:
+
+*we define the layout styles for all the major components of our project.*
+
+### Question 5 / 5
+
+Which of the following are major layout components of a page?
+
+*header, sidebar, grid*

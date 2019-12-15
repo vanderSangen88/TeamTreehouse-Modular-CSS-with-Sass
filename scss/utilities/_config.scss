@@ -18,9 +18,9 @@ $font-weight--ultra-bold : 900;
 
 // Descriptive Base Colors
 
-$white : #fff;
-$black : #0b0b0b;
-$grey  : #797e83;
+$white    : #fff;
+$black    : #0b0b0b;
+$grey     : #797e83;
 
 $fountain-blue  : #52bab3;
 $emerald        : #5ece7f;
@@ -38,15 +38,15 @@ $color-shadow    : rgba($black, .2);
 
 // Color Palette Modifiers
 
-$palettes: (
-  grey: (
-    xx-light : lighten($grey, 43%),
-    x-light  : lighten($grey, 35%),
-    light    : lighten($grey, 12%),
-    base     : $grey,
-    dark     : darken($grey, 8%),
-    x-dark   : darken($grey, 16%)
-  ),
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+	  light    : lighten($grey, 12%),
+	  base     : $grey,
+	 	dark     : darken($grey, 8%),
+	 	x-dark   : darken($grey, 16%)
+	),
 	black: (
 		light    : lighten($black, 10%),
 		base     : $black,
@@ -72,13 +72,13 @@ $letter-space    : 1px;
 
 // Border radius
 
-$br--default     : .4em;
-$br--round       : 50%;
+$br--default    : .4em;
+$br--round      : 50%;
 
 // Transitions
 
-$trns-duration   : .3s;
+$trns-duration  : .3s;
 
 // Path to Assets
 
-$path-image--rel       : "../img";
+$path--rel      : "../img";
