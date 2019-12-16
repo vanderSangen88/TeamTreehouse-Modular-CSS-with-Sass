@@ -307,3 +307,58 @@ The `$context` variable is scoped to the loop, so it's unable to pass a value in
 }
 
 *!global*
+
+---
+
+## S5V1 - Media Query Mixin
+## S5V2 - Using the Media Query Mixin
+## S5V3 - Creating the Responsive Panel
+## S5V4 - Building the Responsive Navigation
+## S5V5 - Creating Element States
+
+## Quiz 
+### Question 1 / 5
+
+ The *@content* directive lets us pass custom styles to a mixin when including it.
+
+### Question 2 / 5
+
+ With SMACSS, element state selectors are usually prefixed with *is-*.
+
+### Question 3 / 5
+
+ The *@at-root* directive lets us nest a Sass rule without nesting the output.
+
+### Question 4 / 5
+
+In a conditional mixin, which directives are used to set the conditions?
+
+*@if and @else*
+
+### Question 4 / 5
+
+Write a condition that will output the media query if the value passed for $break is equal to "med".
+
+@if $break == "med" {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+## Challenge
+### Task 1 / 1
+
+Add the statement that instructs @at-root to output the nested state rule outside the @media query.
+
+```scss
+@media (min-width: 769px) { 
+  display: block;
+  @at-root(without: media) { 
+    .is-hidden-mobile { 
+      display: none; 
+    } 
+  } 
+}
+```
+
+
