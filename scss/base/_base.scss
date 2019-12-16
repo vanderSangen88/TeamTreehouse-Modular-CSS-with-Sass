@@ -52,20 +52,15 @@ p {
 }
 
 blockquote {
-  font-size: em(24px);  
-  font-style : italic;
-  font-weight: $font-weight--light;
-  margin: em(32px, 24px) 0;
-  padding: 0 0 0 5%;
-  border-left: solid em(8px, 24px) palette(grey, xx-light);
-}
-
-// Images
-
-img {
-  margin-bottom: em(24px);
-  max-width: 100%;
-  height: auto;
+	@media (min-width: 769px) {
+		margin: em(32px, 24px) 0;
+		padding: 0 0 0 5%;
+		border-left: em(8px, 24px) solid palette(grey, xx-light); 
+		font-size: em(24px);
+	}
+	font-weight: $font-weight--light;
+	font-style : italic;
+	font-size : em(20px);
 }
 
 // Lists
@@ -75,6 +70,14 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+// Images
+
+img {
+  margin-bottom: em(24px);
+  max-width: 100%;
+  height: auto;
 }
 
 // Form elements

@@ -234,3 +234,76 @@ In the layout directory:
 Which of the following are major layout components of a page?
 
 *header, sidebar, grid*
+---
+
+## S4V1 - Grid Configuration
+## S4V2 - Generating Column Classes
+## S4V3 - Column Layout
+
+## Challenge
+### Task 1 / 3
+
+First, use a `@for` directive to write a loop that iterates through each column defined in the `$cols` variable, starting from 1.
+
+```scss
+@for $i from 1 through $cols {
+
+}
+```
+### Task 2 / 3
+
+Next, we'll need to output selectors for the total number of columns. Inside the @for rule, create a rule that passes the `$i` variable as the modifier in the `.grid__col--`selector.
+
+```scss
+@for $i from 1 through $cols {
+    .grid__col--#{$i} {
+        
+    }
+}
+```
+### Task 3 / 3
+
+Finally, to output the width value of each column, use Sass' `percentage` function to return the result of `$target / $context` as a percentage. Use `($width * $i) + ($gutter * ($i - 1))` as the value for `$target`.
+
+```scss
+@for $i from 1 through $cols {
+    $target: ($width * $i) + ($gutter * ($i - 1));
+
+    .grid__col--#{$i} {
+        width: percentage($target / $context);
+    }
+}
+```
+
+## S4V4 - Building the Grid Container
+
+## Quiz 
+### Question 1 / 3
+
+By default, are we able to extend a selector from within a @media query?
+
+*No*
+
+### Question 2 / 3
+
+What does the `$i` variable in a loop usually mean?
+
+*$i is a counter variable that iterates through each item in a list or variable.*
+
+### Question 3 / 3
+
+The `$context` variable is scoped to the loop, so it's unable to pass a value in the `.grid__col` rule. Which flag will allow you to use the `$context` variable anywhere.
+
+// Column loop
+@for $i from 1 through $cols {
+  $context: context($w, $cols, $gutter);
+  $target: ($w * $i) + ($gutter * ($i - 1));
+  .grid__col--#{$i} {
+    width: percentage($target/$context);
+  }
+}
+.grid__col {
+  margin-left: percentage($gutter/$context);
+}
+
+*!global*
